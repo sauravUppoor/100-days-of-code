@@ -22,7 +22,7 @@ ________________________________________________________________________________
 #### Progress: 
 * Installed *IntelliJ IDEA Community Edition* IDE to work with Javafx
 * Created a window with few buttons and implemented switching scenes.
-* 
+* Applied Visual Design - positioning and color basics
 
 #### Thoughts / Summary:
 * Installation and configuration of the *IntelliJ IDEA Community Edition* was a breeze. This is mainly for the upcoming college project. For refernce i used the Oracle documentation on the javafx and the *newboston* channel on Youtube. Here are the list of things i was managed to build in this first day:
@@ -50,16 +50,23 @@ ________________________________________________________________________________
     btn1.setOnAction(event -> window.setScene(scene2));
     btn2.setOnAction(event -> window.setScene(scene1));
   ```
-
+ * __FCC__ : Brief summary:
+   * ```float```: left/ right . Mostly used with the width attribute
+   * ```z-value```: specifies value in the stack. Higher the value the above it would be on the elements with lower values.
+   * ```margin: auto``` to centre the block or the element
+   * Colour Theory
+ 
 #### Plan of action tomorrow:
-* Continue with the Javafx tutorials and revise on the FCC AVD ideas
+* Continue with the Javafx tutorials and maybe think of some ideas for the project.
+* Continue on the FCC AVD
+* Research on RGB model for Computers and CYM(K) for printing
 
 #### Link / Screenshots:
 * Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
 * FreeCodeCamp: https://learn.freecodecamp.org
 * thenewboston Youtube Channel
 
-<img src="http://g.recordit.co/lNI30UMWCG.gif" width="00" height="500" />
+<img src="http://g.recordit.co/lNI30UMWCG.gif" width="800" height="500" />
 
 _______________________________________________________________________________________________________________________________________
 
