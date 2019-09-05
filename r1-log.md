@@ -7,7 +7,8 @@ The log of my #100DaysOfCode challenge. Started on August 18, 2019.
 * [ ] Complete FCC Responsive Web Design Certification
 * [ ] Build a Portfolio Website
 * [ ] Reach 1200 points on TSEC CodeCell Website
-________________________________________________________________________________________________________________________________________
+
+________________________________________________________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
@@ -56,7 +57,9 @@ ________________________________________________________________________________
 #### Link / Screenshots:
 * Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
 * FreeCodeCamp: https://learn.freecodecamp.org
-* then 
+* thenewboston Youtube Channel
+
+<img src="http://g.recordit.co/lNI30UMWCG.gif" width="00" height="500" />
 
 _______________________________________________________________________________________________________________________________________
 
