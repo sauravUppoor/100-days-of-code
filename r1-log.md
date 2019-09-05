@@ -8,9 +8,78 @@ The log of my #100DaysOfCode challenge. Started on August 18, 2019.
 * [ ] Build a Portfolio Website
 * [ ] Reach 1200 points on TSEC CodeCell Website
 ________________________________________________________________________________________________________________________________________
-# Round 1 - Log
+# __Round 1 - Log__
+---
 
-### Day 15: FCC Applied Visual Design (1/n)
+### __Day 17: Intro to JavaFx__
+#### Sept 5, 2019 - Thursday
+
+#### Today's Project(s):
+* Basic GUI using Javafx
+* FCC AVD (2/n)
+
+#### Progress: 
+* Installed *IntelliJ IDEA Community Edition* IDE to work with Javafx
+* Created a window with few buttons and implemented switching scenes.
+* 
+
+#### Thoughts / Summary:
+* Installation and configuration of the *IntelliJ IDEA Community Edition* was a breeze. This is mainly for the upcoming college project. For refernce i used the Oracle documentation on the javafx and the *newboston* channel on Youtube. Here are the list of things i was managed to build in this first day:
+  * Create a window with a button on it - just a simple Stage with a button on its scene.
+  ```
+  public static void main(String[] args) throws Exception {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage)
+    {
+      //What your window must contain
+     }
+  ```
+  Basic terminologies: __Stage__ is the outer window of our GUI application. __Scene__ is the inner space where we would place our GUI components. __Layout__ is used to give desired position to our components. The 2 types of layouts tested today were the StackPane layout and the VBox layout! More on this next time.
+  * Handle the event of *click* - In the first attempt used a event Handler but not as a Lambda expression but by pointing it to a method in class, which in my case was the method in ```Main``` class.
+  * Using the Lambda expression to clean the code to some extent - This part was very similar to the Javascript concept of callback functions and the arrow notation in the ES6. 
+  ```
+  btn1.setOnAction(event -> System.out.println("button click"));
+  ```
+  Here the ```event``` parameter recognizes that the code following it needs be executed in case the event happens, in short, no need of calling a new Event Handler class. Also its has a benefit that the event always knows whats the source of the Event and  we dont need to specially code for it. (done using the event.```getSource()``` method.
+  * Switching scenes using buttons - Just created 2 scenes and on button press set the current scene of window to the desired scene! Worked fine.
+  ```
+    btn1.setOnAction(event -> window.setScene(scene2));
+    btn2.setOnAction(event -> window.setScene(scene1));
+  ```
+
+#### Plan of action tomorrow:
+* Continue with the Javafx tutorials and revise on the FCC AVD ideas
+
+#### Link / Screenshots:
+* Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
+* FreeCodeCamp: https://learn.freecodecamp.org
+* then 
+
+_______________________________________________________________________________________________________________________________________
+
+### __Day 16: The Deluge__
+#### Sept 4, 2019 - Wednesday
+
+#### Today's Project(s):
+None
+
+#### Progress: 
+None
+
+#### Thoughts:
+* Repeat of July 10, 2018 Deluge in Mumbai and MMR. Freak 500mm rainfall in little more than 36 hrs where I stay. It resulted in the whole of the city getting submerged which resulted in 15 hour power cut. So all i could manage to do was study for my college tests.
+
+#### Plan of action tomorrow:
+* Start learning JavaFx for one of college projects and try to complete the FCC AVD.
+
+#### Link / Screenshots:
+
+_______________________________________________________________________________________________________________________________________
+
+### __Day 15: FCC Applied Visual Design (1/n)__
 #### Sept 3, 2019 - Tuesday
 
 #### Today's Project(s):
@@ -31,7 +100,7 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 14: Competitive Coding and Data Strucutre - continued
+### __Day 14: Competitive Coding and Data Strucutre - continued__
 #### Sept 2, 2019 - Monday
 
 #### Today's Project(s):
@@ -49,10 +118,10 @@ Mostly academic related stuffs today and again not much JS. However, still a lot
 * Continue with the Data Structure and the one remaining problem of the TCC Problem.
 
 #### Link / Screenshots:
----
+
 _______________________________________________________________________________________________________________________________________
 
-### Day 13: Competitive Coding and Data Strucutre
+### __Day 13: Competitive Coding and Data Strucutre__
 #### Sept 1, 2019 - Sunday
 
 #### Today's Project(s):
@@ -73,7 +142,7 @@ No JS for today. Studied the Data Structure concept as it'd help cater both the 
 ---
 _______________________________________________________________________________________________________________________________________
 
-### Day 12: Form Validation
+### __Day 12: Form Validation__
 #### Aug 31, 2019 - Saturday
 
 #### Today's Project(s):
@@ -96,7 +165,7 @@ https://twitter.com/MindianApe/status/1167860590179577856
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 11: Installing Babel
+### __Day 11: Installing Babel__
 #### Aug 30, 2019 - Friday [Missed 2 days due to legit reasons related to College and academics]
 
 #### Today's Project(s):
@@ -119,7 +188,7 @@ https://twitter.com/MindianApe/status/1167499905289641985
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 10: Running a webpack dev server
+### __Day 10: Running a webpack dev server__
 #### Aug 27, 2019 - Tuesday
 
 #### Today's Project(s):
@@ -143,7 +212,7 @@ https://twitter.com/MindianApe/status/1166411887421972480
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 9: NodeJS and webpack intro
+### __Day 9: NodeJS and webpack intro__
 #### Aug 26, 2019 - Monday
 
 #### Today's Project(s):
@@ -165,7 +234,7 @@ https://twitter.com/MindianApe/status/1166050520219279361
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 8: Modern Javascript
+### __Day 8: Modern Javascript__
 #### Aug 25, 2019 - Sunday
 
 #### Today's Project(s):
@@ -189,7 +258,7 @@ https://twitter.com/MindianApe/status/1165682810406891521
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 7: Project using CSS Variable 
+### __Day 7: Project using CSS Variable__ 
 #### Aug 24, 2019 - Saturday
 
 #### Today's Project(s):
@@ -211,7 +280,7 @@ https://twitter.com/MindianApe/status/1165321868624064513
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 6: A sluggish day 
+### __Day 6: A sluggish day__ 
 #### Aug 23, 2019 - Friday
 
 #### Today's Project(s):
@@ -234,7 +303,7 @@ Was tired after a long and tiring day. The big project 'forkify' looks interesti
 ---
 _______________________________________________________________________________________________________________________________________
 
-### Day 5: AJAX / API 
+### __Day 5: AJAX / API__ 
 #### Aug 22, 2019 - Thursday
 
 ### Today's Project(s):
@@ -258,7 +327,7 @@ https://twitter.com/MindianApe/status/1164586622005981185
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 4: JS Clock 
+### __Day 4: JS Clock__ 
 #### Aug 21, 2019 - Wednesday
 
 #### Today's Project(s):
@@ -280,7 +349,7 @@ https://twitter.com/MindianApe/status/1164211064910823428
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 3: CallBacks 
+### __Day 3: CallBacks__ 
 #### Aug 20, 2019 - Tuesday
 
 #### Today's Project(s):
@@ -302,7 +371,7 @@ https://twitter.com/MindianApe/status/1163819047483396101
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 2: The DrumKit
+### __Day 2: The DrumKit__
 #### Aug 19, 2019 - Monday
 
 #### Today's Project(s):
@@ -323,7 +392,7 @@ https://twitter.com/MindianApe/status/1163464444514582534
 
 _______________________________________________________________________________________________________________________________________
 
-### Day 1.Round 1 Begins!
+### __Day 1.Round 1 Begins!__
 #### Aug 18, 2019 - Sunday
 
 #### Today's Project(s):
