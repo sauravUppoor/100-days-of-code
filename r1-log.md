@@ -12,6 +12,93 @@ ________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
+### __Day 18: FCC Applied visual Design (3/n) and Javafx continued__
+#### Sept 6, 2019 - Friday
+
+#### Progress: 
+* Applied Visual Design - More on colour, gradient, transform property and Shapes
+* Multiple window creation and interacting using javafx
+* Closing a GUI window the right way
+
+#### Summary:
+* __FCC__ : *(Time spent: 51 minutes)*
+
+  * ```hsl()``` stands for hue, saturation and lightness. Hue takes in angle in degree as its a colour wheel, Saturation stands for the amount for gray in the colour with 100% meaning no gray noise and 0% meaning total gray. Lightness is the amount of white or black shade the colour posses. A 100% lightness means full Full white and 0% as full black.
+  * CSS gradients can be created using the ```linear-gradient``` property of the ```background``` atrribute. It takes in the below mentioned parameters :
+ ```background: linear-gradient(angle, color1, color2,...)``` 
+ The angle can be in deg where 90 deg means vertical gradient and 45deg means backslash gradient. colours could be rgb(), hsl() or the normal hex codes. 
+ It could also be used to create strip patterns using ```repeating-linear-gradient()``` property which takes in angle and colour stops, For eg -
+ ```background: repeating-linear-gradient(
+        45deg,
+        yellow 0px;
+        blue 40px;
+        green 40px;
+        red 80px;
+     )
+ ```
+   * The ```transform``` property:
+ 
+   * ```scale(1.2)``` is used to enlarge the size of the object ot the desired times size as specified in the parameter passed to the scale function.
+   * ```skewX(angle)``` and ```skewY(angle)``` functions are used to tilt the respective edges in the angle specified as the parameter.
+  * Created a cardioide shape using the css ```::before``` and ```::after``` properties! Need to research on this topic a bit more so it'd be on my PoAT.
+ 
+ * __Javafx__: 
+ 
+   * Created multiple windows using a different class in java. Then passed the title and the message of the pop-up as parameter to the display method ofthe class. In the method created a total new window and added modality so as to give priority to the new window being opened. Below is the new class code.
+   
+   ```
+   public class AlertBox {
+    public static void display(String title, String message) {
+        Stage window = new Stage();
+
+        window.initModality(Modality.APPLICATION_MODAL);
+        window.setMinWidth(250);
+        window.setMinHeight(350);
+        window.setTitle(title);
+
+        Button btnClose = new Button("Close the window");
+        btnClose.setOnAction(e -> window.close());
+
+        Label label = new Label(message);
+
+        VBox layout = new VBox();
+        layout.getChildren().addAll(label, btnClose);
+        layout.setAlignment(Pos.TOP_CENTER);
+
+        Scene scene = new Scene(layout);
+        window.setScene(scene);
+        window.showAndWait();
+    }
+   }```
+  
+  * The interactivity can be added by returning a value from the method called and using that value obtained to do the required task. Here is a simple snippet of the code appended to the above one.
+  ```
+  Button yesBtn = new Button("Yes");
+        Button noBtn = new Button("No");
+
+        yesBtn.setOnAction(e -> {
+            answer = true;
+            window.close();
+        });
+   ```
+   <img src="http://g.recordit.co/PWyVyiunoY.gif" width="700" height="350" />
+  
+  * Closing a program properly by using multiple windows concept and making sure the user wants to exit!
+
+ 
+#### Plan of action tomorrow / Thoughts:
+* Research on ```::before``` and ```::after``` CSS pseudo elements
+* Revise the Udemy JS course current module. So as to not completely lose track of it.
+* FCC AVD
+* Javafx continued!
+
+#### Link / Screenshots:
+* Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
+* FreeCodeCamp: https://learn.freecodecamp.org
+* thenewboston Youtube Channel
+
+_______________________________________________________________________________________________________________________________________
+
 ### __Day 17: Intro to JavaFx__
 #### Sept 5, 2019 - Thursday
 
