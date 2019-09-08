@@ -12,6 +12,99 @@ ________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
+### __Day 20: DS Sorting Techniques and Javafx Gridpane__
+#### Sept 8, 2019 - Sunday
+
+#### Progress: 
+* Leanrt about Gridpane in javafx
+* Created a basic login window with form validation
+* Revised the Sorting Algorithms
+ * Bubble Sort
+ * Insertion Sort
+ * Merge Sort
+ * Quick Sort
+* Solved 2/3 problems of TCC Week 6
+
+#### Summary:
+* __Javafx__: *Approx 45 minutes*
+ * ```GridPane``` class is a layout type that allows the users to arrange the components in grid format(consisting of rows and columns). While attaching the components we  need to specify the row and column of the grid in which we want to TTch it in.
+ * New stuff learned :
+  * ```GridPane.setPadding(Insets)``` helps us to set the padding arround the scene and the stage. ```insets``` is an object that takes in 4 integer values that are TRBL padding (just like the HTML one).
+  * New components -> ```Label``` and ```TextField```
+  * ```setVGap(value)``` sets the vertical gap between the components to the value specified. Usually 8.
+  * ```setHGap(value)``` setsthe horizontal gap between the components to the value specified. Usually 10.
+  * ```TextFieldname.setPromptText(text)``` is same as ```placeholder``` attribute in HTML.
+  * ```TextFieldname.getText()``` returns the data entered in the text field this could be used for sending the data into our DB or for Validations.
+  * For Validation, create a private boolean function that checks for each required parameter. ie for each new requirement there would be a new function (like isInt()) that would have the Label as first parameter and the Text entered in the TextField as the second parameter. Inside the function check for the required details and return boolean value.
+  ex - 
+  ```
+  private boolean checkLen(String content) {
+        if(content.length() < 8) {
+            System.out.println("Password should be greater than 7!");
+            return false;
+        }
+        else {
+            System.out.println("Login successful!");
+            window.close();
+            return true;
+        }
+    }
+   ```
+* __Data Structures__ *approx 25 mins*
+ * Sorting algos: 
+   * Bubble Sort: This algorithm is based on the idea of repeatedly comparing pairs of adjacent elements and then switching their positions if they exist in the wrong order. The complexity of bubble sort is O(n2) in the worst
+   * Insertion Sort: The idea behind is that in each iteration, it consumes one element from the input elements, removes it and finds its correct position i.e., where it belongs in the sorted list and places it there. Complexity of Insertion sort is O(n2) .
+   * Merge Sort: This sorting algorithm works on the following principle - Divide the array in two halves. Repeatedly sort each half, then merge two halves. complexity of this algorithm will be O( n( log2 n )).
+   * Quick Sort: This algorithm is also based on the divide and conquer approach. It reduces the space complexity and removes the use of auxiliary array used in merge sort. The worst case time complexity of this algorithm is O( n2 )
+
+#### Plan of action tomorrow / Thoughts:
+* Javafx continued
+* Data Structure Searching Algorithm revision
+* *Keeping the list short as the college exams are approaching.
+
+#### Link / Screenshots:
+* Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
+* thenewboston Youtube Channel
+* https://www.hackerearth.com/practice/notes/sorting-code-monk/
+<img src = "http://g.recordit.co/vnqX2h4vUx.gif" width = 800 heigth = 500>
+
+______________________________________________________________________________________________________________________________________
+
+### __Day 19: DS Hashing and Javafx continued__
+#### Sept 7, 2019 - Saturday
+
+#### Progress: 
+* Studied various layouts in Javafx (BorderPane, HBox, VBox)
+* Embedding H and VBox into BorderPane layout
+* In DS:
+ * Revised Hashing (Methods, Collision Handling)
+ * Introduction to Subset Sum using Backtracking
+
+#### Summary:
+* __Javefx__: *Approx 30 minutes*
+ * BorderPane layout consists of various sections like top, left, right, centre, bottom. These can be specified during the creation of the components.
+ * The ```VBox``` as the name suggests arranges the components in Vertical format. Whereas the ```HBox``` arranges in the horizontal format.
+ * These layouts can be embedded together as follows:
+   ```
+   VBox vertical = new VBox();
+   .
+   .
+   .
+   BorderPane layout = new BorderPane();
+   BorderPane.setLeft(vertical);
+   ```
+
+#### Plan of action tomorrow / Thoughts:
+* Javafx - Form creation and validation
+* Sorting techniques Revision
+* TCC Week 6 problems
+
+#### Link / Screenshots:
+* Oracle Javafx Documentation: (https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784)
+* thenewboston Youtube Channel
+
+_______________________________________________________________________________________________________________________________________
+
 ### __Day 18: FCC Applied visual Design (3/n) and Javafx continued__
 #### Sept 6, 2019 - Friday
 
