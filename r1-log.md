@@ -6,12 +6,43 @@ The log of my #100DaysOfCode challenge. Started on August 18, 2019.
 * [ ] Complete Udemy's Complete JavaScript Course
 * [ ] Complete FCC Responsive Web Design Certification
 * [ ] Build a Portfolio Website
-* [ ] Reach 1200 points on TSEC CodeCell Website
+* [x] ~Reach 1200 points on TSEC CodeCell Website~
+  * [ ] Complete Easy Level problems of Stack, Array, Queues, Linked List on HackerRank
 
 ________________________________________________________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
+### __Day 21: Queues Data Strucutre and String programs in Java__
+#### Sept 9, 2019 - Monday
+
+#### Progress: 
+* Queues DS implentation (ADT, Arrays, Linked List)
+* Strings in java
+* Also completed goal __Reach 1200 points on TSEC CodeCell Website__. New Goal updated!
+
+#### Summary:
+* __Data Structures__ *approx 1 hour*
+ * Queues Data Strucutre:
+   * Details about Queues ADT and its operations.
+   * Array Implementation of Queues
+   * Linked List implementation of Queues
+   * Time complexity
+   
+  * __Java Revision__ *Academics 2 hours*
+   * Wrote program for 3 problem statments stated below:
+   1. Sorting Strings in lexical way.
+   2. Counting the upper, lower, special chars, digits and blank spaces in the entered string.
+   3. Menu driven program for understanding various string buffer class methods.
+
+#### Plan of action tomorrow / Thoughts:
+* Write programs for linear, circular and priority Queues.
+* Implement various searching algorithms.
+* HackerRank problem on Queues, time permitting.
+
+#### Link / Screenshots:
+<img src = "https://prnt.sc/p3ws4l" width = 800 heigth = 500>
+______________________________________________________________________________________________________________________________________
 ### __Day 20: DS Sorting Techniques and Javafx Gridpane__
 #### Sept 8, 2019 - Sunday
 
