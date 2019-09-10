@@ -13,6 +13,30 @@ ________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
+### __Day 22: Implementation of Linear, Circular, Double ended queues using Array and Linked List__
+#### Sept 10, 2019 - Tuesday
+
+#### Progress: 
+* Queues DS implentation
+
+#### Summary:
+* __Data Structures__ *approx 3.5 hour*
+ * Queues Data Strucutre:
+   * Executed the following programs:
+       * Linear Queue using Array and Linked List
+       * Circular queue using Array
+       * Double ended queues using Array
+   * Priority Queues - Theory and Applications
+   
+   
+#### Plan of action tomorrow / Thoughts:
+* Revision of Stack and Sorting algorithms.
+* HackerRank problem on Queues.
+
+#### Link / Screenshots:
+
+______________________________________________________________________________________________________________________________________
+
 ### __Day 21: Queues Data Strucutre and String programs in Java__
 #### Sept 9, 2019 - Monday
 
