@@ -13,6 +13,31 @@ ________________________________________________________________________________
 # __Round 1 - Log__
 ---
 
+### __Day 23: Implementation of Priority Queues, Sorting Algorithms__
+#### Sept 11, 2019 - Wednesday
+
+#### Progress: 
+* Queues DS implentation
+* Revision of Bubble, Insertion, Quick sort
+
+#### Summary:
+* __Data Structures__ *approx 3.5 hour*
+ * Queues Data Strucutre:
+    * Priority Queues - Unsorted and sorted Array Implementation
+ * Sorting Algorithm implementation:
+    * Insertion
+    * Quick Sort
+    * Bubble
+     
+#### Plan of action tomorrow / Thoughts:
+* Merge sort implementation, Stack and Applications revision
+* Linked List and Hashing revision
+* Had a tough time debugging the Priority queues using Sorted Linked List. Will probably rewrite it again tomorrow.
+
+#### Link / Screenshots:
+
+______________________________________________________________________________________________________________________________________
+
 ### __Day 22: Implementation of Linear, Circular, Double ended queues using Array and Linked List__
 #### Sept 10, 2019 - Tuesday
 
