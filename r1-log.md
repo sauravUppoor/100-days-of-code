@@ -18,7 +18,7 @@ ________________________________________________________________________________
 
 #### Progress: 
 * Queues DS implentation
-* Revision of Bubble, Insertion, Quick sort
+* Revision of various Sorting Algos
 
 #### Summary:
 * __Data Structures__ *approx 3.5 hour*
@@ -28,6 +28,7 @@ ________________________________________________________________________________
     * Insertion
     * Quick Sort
     * Bubble
+    * Selection Sort
      
 #### Plan of action tomorrow / Thoughts:
 * Merge sort implementation, Stack and Applications revision
