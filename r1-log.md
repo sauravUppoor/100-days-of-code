@@ -12,6 +12,30 @@ The log of my #100DaysOfCode challenge. Started on August 18, 2019.
 ________________________________________________________________________________________________________________________________
 # __Round 1 - Log__
 ---
+### __Day 24: Study of Various Array methods__
+#### Sept 18, 2019 - Wednesday
+
+#### Progress: 
+* Studied following array methods:
+   * map()
+   * reduce()
+   * sort()
+
+#### Summary:
+* ```map()``` : It creates another array that with the results obtained from the callback function. Does not manipulate the original array.
+* ```reduce()``` : It reduces the array contents to a single value. Does not manipulate the original array.
+* ```sort()``` : It helps us to sort the given array. takes a comparing function which is optional.
+
+Not a detailed report. Will probably update more tomorrow as I get back to this challenge after a week of college exams. 
+     
+#### Plan of action tomorrow / Thoughts:
+* Continue with Javascript revision - array methods exercises.
+* HackerRank Problem.
+* Udemy's course last module revision.
+
+#### Link / Screenshots:
+
+______________________________________________________________________________________________________________________________________
 
 ### __Day 23: Implementation of Priority Queues, Sorting Algorithms__
 #### Sept 11, 2019 - Wednesday
