@@ -50,10 +50,13 @@ The callback function can also be written, as you might expect, as an arrow func
 __Array.prototype.map()__
 The map() method is a fun one because it allows you to do something with an Array really fast. Before I get into what that means, let’s see what the method actually looks like:
 
-```const newArray = array.map(callback())
+```const newArray = array.map(callback());
+```
 The map() method takes a callback function just like filter() does. The difference between the two is that map() will create a new Array that has the same amount of items as the original Array, whereas with filter() you can end up with a smaller Array.
 So why is it fun? In the case of the inventors we spoke of above, let’s say we want to have an Array with the full names of all of the inventors. We can use map() to do that:
-const fullNames = inventors.map(inventor => (
+
+```
+    const fullNames = inventors.map(inventor => (
     `${inventor.first} ${inventor.last}`
 ));
 ```
@@ -68,7 +71,8 @@ __Array.prototype.sort()__
 With the sort() method we can, as you might have guessed from the name, sort an Array. The method takes a callback function that takes two arguments which you’ll compare to figure out how to sort them out. You then come up with a condition that returns 1 or -1. Returning 1 moves the argument up in the new array while returning -1 moves the argument down in the new array. Let’s first look at the actual method:
 const newArray = array.sort(callback(a, b))
 This time we want to sort the inventors based upon their birthdate. So the oldest would go on top and the youngest at the bottom:
-```const ordered = inventors.sort(function(a, b) {
+```
+  const ordered = inventors.sort(function(a, b) {
   if(a.year > b.year) {
     return 1;
   } else {
@@ -93,7 +97,9 @@ const newArray = array.reduce(callback(), inititalValue)
 The method takes two arguments: a callback function and an initial value. Although the initial value is optional, it is recommended that you still use one as you could end up with unpredictable results.
 So using our inventors one last time, we now want to know how many years all of the inventors combined lived. Here’s how we do it:
 
-```const totalYears = inventors.reduce((total, inventor) => {
+```
+
+  const totalYears = inventors.reduce((total, inventor) => {
   return total + (inventor.passed - inventor.year);
 }, 0);
 ```
@@ -104,7 +110,8 @@ Here’s what’s going on:
 3. When the loop finished we now have a variable const totalYears which holds the combined years the inventors have lived.
 We are using an explicit return right now, but we can also use an implicit return like so:
 
-```const totalYears = inventors.reduce((total, inventor) => (
+```
+  const totalYears = inventors.reduce((otal, inventor) => (
   total + (inventor.passed - inventor.year)
 ), 0);
 ```
