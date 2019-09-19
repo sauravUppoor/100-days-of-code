@@ -19,15 +19,89 @@ ________________________________________________________________________________
 * Studied following array methods:
    * map()
    * reduce()
-   * sort()
+   * sort() 
+   * filter()
 
 #### Summary:
-* ```map()``` : It creates another array that with the results obtained from the callback function. Does not manipulate the original array.
-* ```reduce()``` : It reduces the array contents to a single value. Does not manipulate the original array.
-* ```sort()``` : It helps us to sort the given array. takes a comparing function which is optional.
+__Array.prototype.filter()__
 
-Not a detailed report. Will probably update more tomorrow as I get back to this challenge after a week of college exams. 
-     
+The filter() method loops over the Array to create a new Array based upon a test that you write inside the callback function.
+const newArray = array.filter(callback())
+In Wes’ video we are given an Array of inventors represented as Objects. Each Object has a first name, a last name, year the inventor was born in and year the inventor passed away in. The objective is to filter those who were born in the 1500's.
+
+```const fifteen = inventors.filter(function(inventor) {
+  if(inventor.year >= 1500 && inventor.year < 1600) {
+    return true;
+  }
+});```
+
+This is what is happening with the filter() method:
+1. We pass the method a callback function which takes one argument: the single inventor. The function will be called for each inventor.
+2. We then check if the inventor was born during the 1500’s and return true if that’s the case.
+3. The new Array const fifteen now has all the inventors who returned true.
+The callback function can also be written, as you might expect, as an arrow function with an implicit return:
+
+```const fifteen = inventors.filter(inventor => (
+   inventor.year >= 1500 && inventor.year < 1600
+));```
+
+__Array.prototype.map()__
+The map() method is a fun one because it allows you to do something with an Array really fast. Before I get into what that means, let’s see what the method actually looks like:
+
+```const newArray = array.map(callback())
+The map() method takes a callback function just like filter() does. The difference between the two is that map() will create a new Array that has the same amount of items as the original Array, whereas with filter() you can end up with a smaller Array.
+So why is it fun? In the case of the inventors we spoke of above, let’s say we want to have an Array with the full names of all of the inventors. We can use map() to do that:
+const fullNames = inventors.map(inventor => (
+    `${inventor.first} ${inventor.last}`
+));```
+Here’s what’s going on:
+1. Just like filter() we pass a callback function which takes the inventor as an argument. The function will be called for each inventor.
+2. We then implicitly return a template literal with the inventor’s first- and lastname separated by a space.
+3. The new Array const fullNames now holds all of the full names.
+
+__Array.prototype.sort()__
+
+With the sort() method we can, as you might have guessed from the name, sort an Array. The method takes a callback function that takes two arguments which you’ll compare to figure out how to sort them out. You then come up with a condition that returns 1 or -1. Returning 1 moves the argument up in the new array while returning -1 moves the argument down in the new array. Let’s first look at the actual method:
+const newArray = array.sort(callback(a, b))
+This time we want to sort the inventors based upon their birthdate. So the oldest would go on top and the youngest at the bottom:
+```const ordered = inventors.sort(function(a, b) {
+  if(a.year > b.year) {
+    return 1;
+  } else {
+    return -1;
+  }
+});```
+Here’s what’s going on:
+1. Just like filter() and map() we pass a callback function, but this time the function takes two arguments we simply call a and b. The method will pass the function two inventors to compare until it’s done sorting.
+We compare the arguments using an if statement that simply checks if the year a was born in is greater than that of b and if it is it will return 1, thus moving that inventor up in the Array. If it’s not it will return -1, moving the inventor down in the Array.
+2. The new Array const ordered now holds a list of the inventors sorted by the year they were born in.
+3. Something that is very cool to use if you like single line methods, is a ternary operator. It’s a shortcut to the if statement and it looks like this:
+condition ? expr1 : expr2
+4. So if the condition is true it will run ? if it’s not it will run : .
+With the ternary operator in mind we can turn the entire method into a single line arrow function using an implicit return:
+```const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);```
+
+__Array.prototype.reduce()__
+
+You see, the story has a purpose because the method is basically a for loop in which you can create a total based on an expression using all the items in your Array. Here’s what it looks like:
+const newArray = array.reduce(callback(), inititalValue)
+The method takes two arguments: a callback function and an initial value. Although the initial value is optional, it is recommended that you still use one as you could end up with unpredictable results.
+So using our inventors one last time, we now want to know how many years all of the inventors combined lived. Here’s how we do it:
+
+```const totalYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.passed - inventor.year);
+}, 0);```
+
+Here’s what’s going on:
+1. Just like the other methods we pass a callback function and, just like sort(), this method takes two arguments: the total and the next item to be used in the loop (which was var i in our for loop example). Now here’s why the initial value is important. If the callback is being called for the first time, there is no total to be used yet. Instead it will take the initial value as the first total.
+2. We then make a little calculation to figure out how long the specific inventor has lived and add his years lived to the total years lived by all inventors.
+3. When the loop finished we now have a variable const totalYears which holds the combined years the inventors have lived.
+We are using an explicit return right now, but we can also use an implicit return like so:
+
+```const totalYears = inventors.reduce((total, inventor) => (
+  total + (inventor.passed - inventor.year)
+), 0);```
+
 #### Plan of action tomorrow / Thoughts:
 * Continue with Javascript revision - array methods exercises.
 * HackerRank Problem.
@@ -36,6 +110,7 @@ Not a detailed report. Will probably update more tomorrow as I get back to this 
 #### Link / Screenshots:
 
 ______________________________________________________________________________________________________________________________________
+__6 - day break due to college exams__
 
 ### __Day 23: Implementation of Priority Queues, Sorting Algorithms__
 #### Sept 11, 2019 - Wednesday
